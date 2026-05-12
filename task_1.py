@@ -42,7 +42,7 @@ def display_man(wrong_guesses):
     print("***********")
     for line in hangman[wrong_guesses]:
         print(line)
-    print("**************")
+    print("************")
         
 
 def display_hint(hint):
@@ -55,7 +55,7 @@ def main():
     answer = random.choice(words)
     hint = ["_"] * len(answer)
     wrong_guesses = 0
-    guessed_letters = set()
+    guessed_letters = set() 
     is_running = True
     
     
